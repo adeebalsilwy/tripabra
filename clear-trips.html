@@ -6,7 +6,10 @@
 <body>
     <script>
         localStorage.setItem('trips', '[]');
-        document.write('تم حذف جميع الرحلات بنجاح! يمكنك إغلاق هذه النافذة الآن.');
+        // Create a new element to display the success message
+        const messageElement = document.createElement('div');
+        messageElement.textContent = 'تم حذف جميع الرحلات بنجاح! يمكنك إغلاق هذه النافذة الآن.';
+        document.body.appendChild(messageElement);
     </script>
 </body>
 </html>
